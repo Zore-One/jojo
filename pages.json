@@ -1,0 +1,123 @@
+{
+	"easycom": {
+			"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path" : "pages/home/home",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "首页",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cate/cate",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/car/car",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "购物车",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"subPackages": [
+		{
+			"root": "pagA",
+			"pages": [
+			    {
+                    "path" : "list/list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "detail/detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "jojo",
+		"navigationBarBackgroundColor": "#FF6510",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#FF6510",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "static/icon_a_1.png",
+				"selectedIconPath": "static/icon_a.png"
+			},
+			{
+				"pagePath": "pages/cate/cate",
+				"text": "商品",
+				"iconPath": "static/icon_b_1.png",
+				"selectedIconPath": "static/icon_b.png"
+			},
+			{
+				"pagePath": "pages/car/car",
+				"text": "购物车",
+				"iconPath": "static/icon_c_1.png",
+				"selectedIconPath": "static/icon_c.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/icon_d_1.png",
+				"selectedIconPath": "static/icon_d.png"
+			}
+		]
+	},
+	"condition": {//模式配置，仅开发期间生效
+		"current": 0,
+		"list": [
+			{
+				"name": "home",
+				"path": "pages/home/home",
+				"query": "id=1"
+			},
+			{
+				"name": "cate",
+				"path": "pages/cate/cate",
+				"query": "id=2"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}
